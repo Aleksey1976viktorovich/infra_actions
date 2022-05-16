@@ -71,7 +71,7 @@ jobs:
         with:
           push: true
           # ваш-логин-на-docker-hub/ваш-репозиторий-на-docker-hub:latest
-          tags: aleksey1976viktorovich/infra_actions:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/infra_actions:latest
 
   # Деплой приложения на удалённый сервер *
   deploy:
